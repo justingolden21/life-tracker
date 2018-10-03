@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Life Tracker</title>
+<meta charset="utf-8">
+<meta name="title=" content="Life Tracker">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Use Life Tracker to track lifetotals or other numbers in a game">
+<meta name="keywords" content="life tracker, track life, lifetotal, lifetotals, track lifetotal, track lifetotals, track player, track players, track player lifetotals">
+
+<link rel="icon" href="icon/icon.png" type="image/png">
+
+<meta id="theme1" name="theme-color" content="#eee">
+<meta id="theme2" name="msapplication-navbutton-color" content="#eee">
+<meta id="theme3" name="apple-mobile-web-app-status-bar-style" content="#eee">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/scripts.js"></script>
+
+</head>
+<body>
+
+<div class="container text-center">
+<h3>
+<img src="icon/icon.svg" width="64px">
+Life Tracker</h3>
+
+<div class="row">
+<div class="col-sm-4">
+<button id="newPlayer" tabindex="-1" class="btn btn-green"><i class="fas fa-plus-circle"></i> New Player</button>
+</div><div class="col-sm-4">
+<button id="deleteAll" tabindex="-1" class="btn btn-red"><i class="fas fa-times-circle"></i> Delete All Players</button>
+</div><div class="col-sm-4">
+<button id="resetAll" tabindex="-1" class="btn btn-blue"><i class="fas fa-sync-alt"></i> Reset All Lives</button>
+
+<br>Default Life: <input id="defaultLife" tabindex="-1" title="life to set when clicking reset lives" class="form-control form-control-sm" type="number" value="20">
+</div>
+</div>
+<!-- TODO: add another attribute (like mana commander damage) -->
+<!-- track whos turn it is (highlight with light green tint, click next turn button to progress it, or make turn button under dropdown to make their turn) -->
+<!-- use toggles for turn. click toggle to tunr on turn and off on everyone else, or next turn to move down the line or back to top. when player dies move turn down -->
+<!-- highlight players with 0 life or less in a dark grey tint -->
+<!-- history for changes to life? -->
+</div>
+
+<!-- todo: onload focus first input -->
+<!-- todo: download and upload life totals -->
+<hr>
+
+<div id="playersDiv" class="row">
+
+<div class="playerDiv col-sm-3">
+	<button title="delete player" onclick="$(this).parent().remove();" tabindex="-1" class="deletePlayer btn btn-red"><i class="fas fa-times"></i></button>
+
+	<div class="input-group">
+		<div class="input-group-append">
+			<label>Name:</label>
+		</div>
+		<input class="playerName form-control form-control-sm" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="-1" type="text">
+	</div>
+
+	Life: 
+	<div class="input-group">
+		<div class="input-group-append">
+			<button title="decrement life total" onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )-1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-minus"></i></button>
+		</div>
+		<input class="playerLife form-control form-control-lg text-center" onclick="this.select();" onchange="checkDead($(this) );" type="number" value="20">
+		<div class="input-group-append">
+			<button title="increment life total" onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )+1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-plus"></i></button>
+		</div>
+	</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

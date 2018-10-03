@@ -1,0 +1,114 @@
+$bright-red: hsl(0, 80%, 60%);
+$red: hsl(0, 80%, 50%);
+$dark-red: hsl(0, 80%, 40%);
+$bright-green: hsl(120, 80%, 60%);
+$green: hsl(120, 80%, 50%);
+$dark-green: hsl(120, 80%, 40%);
+
+$main-green: hsl(120, 40%, 80%);
+
+$black: #333;
+$dark-grey: #666;
+$grey: #999;
+$light-grey: #ccc;
+$light-light-grey: #eee;
+
+$colorNames: red green blue;
+$brightColors: hsl(0, 80%, 60%) hsl(120, 80%, 60%) hsl(240, 80%, 60%);
+$darkColors: hsl(0, 80%, 40%) hsl(120, 80%, 40%) hsl(240, 80%, 40%);
+
+@for $i from 1 through length($colorNames) {
+	.btn.btn-#{nth($colorNames, $i)} {
+		background-color: nth($brightColors, $i);
+		border: 2px solid nth($darkColors, $i);
+		color: $light-light-grey;;
+	}
+	.btn.btn-#{nth($colorNames, $i)}:hover {
+		background-color: nth($darkColors, $i);
+	}
+}
+
+
+
+
+html, body, input {
+		background-color: $light-light-grey !important;
+}
+
+body {
+	margin: 20px;
+	color: $black;
+}
+::-moz-selection {
+	background: $light-grey;
+}
+::selection {
+	background: $light-grey;
+}
+// #playersDiv {
+// 	border: 4px solid $black;
+// 	padding: 10px;
+// }
+.playerDiv {
+	border: 2px solid $dark-grey;
+	padding: 10px;
+	margin: 5px;
+	display: inline-block;
+	position: relative;
+	box-shadow: 0px 0px 5px $black;
+}
+.deletePlayer {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 99;
+	border: none !important;
+}
+
+input[type=text], input[type=number] {
+	// box-shadow: 0 0 5px $black;
+	border: 2px solid $grey;
+	text-align: center;
+	color: $dark-grey;
+}
+
+.playerName {
+	margin-right: 40px;
+	margin-left: 10px;
+	border-radius: 5px !important;
+}
+.playerLife {
+	border-right: 0 !important;
+	border-left: 0 !important;
+}
+.playerLife.dead {
+	background-color: $bright-red !important;
+	color: $light-light-grey !important;
+}
+#defaultLife {
+	border-radius: 0;
+	width: 100px;
+	display: inline-block;
+}
+#newPlayer, #deleteAll, #resetAll {
+	margin-bottom: 10px;
+}
+
+.btn {
+	border-radius: 0px;
+}
+.btn:active .fas {
+	transform: scale(1.5);
+}
+
+h3 {
+	color: $main-green;
+}
+
+/* JESUS CHRIST BOOTSTRAP */
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
