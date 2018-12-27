@@ -1,0 +1,4 @@
+use react
+capitalize titles in html
+update icon
+add night mode
