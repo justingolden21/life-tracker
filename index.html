@@ -40,7 +40,7 @@ Life Tracker</h3>
 </div><div class="col-sm-4">
 <button id="resetAll" tabindex="-1" class="btn btn-blue"><i class="fas fa-sync-alt"></i> Reset All Lives</button>
 
-<br>Default Life: <input id="defaultLife" tabindex="-1" title="life to set when clicking reset lives" class="form-control form-control-sm" type="number" value="20">
+<br>Default Life: <input id="defaultLife" tabindex="-1" title="Life to set when clicking reset lives" class="form-control form-control-sm" type="number" value="20">
 </div>
 </div>
 <!-- TODO: add another attribute (like mana commander damage) -->
@@ -57,7 +57,7 @@ Life Tracker</h3>
 <div id="playersDiv" class="row">
 
 <div class="playerDiv col-sm-4 col-md-3">
-	<button title="delete player" onclick="$(this).parent().remove();" tabindex="-1" class="deletePlayer btn btn-red"><i class="fas fa-times"></i></button>
+	<button onclick="$(this).parent().remove();" tabindex="-1" class="deletePlayer btn btn-red"><i class="fas fa-times"></i></button>
 
 	<div class="input-group">
 		<div class="input-group-append">
@@ -69,11 +69,11 @@ Life Tracker</h3>
 	Life: 
 	<div class="input-group">
 		<div class="input-group-append">
-			<button title="decrement life total" onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )-1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-minus"></i></button>
+			<button onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )-1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-minus"></i></button>
 		</div>
 		<input class="playerLife form-control form-control-lg text-center" onclick="this.select();" onchange="checkDead($(this) );" type="number" value="20">
 		<div class="input-group-append">
-			<button title="increment life total" onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )+1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-plus"></i></button>
+			<button onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )+1); checkDead($(this).parent().parent().children('.playerLife') );" tabindex="-1" class="btn btn-green"><i class="fas fa-plus"></i></button>
 		</div>
 	</div>
 </div>

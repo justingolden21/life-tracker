@@ -2,3 +2,7 @@ use react
 capitalize titles in html
 update icon
 add night mode
+upload and download via txt or remember with cookies?
+add list of players with comma seperated text?
+add poison/commander damage etc?
+change focus color
