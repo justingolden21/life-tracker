@@ -1,21 +1,19 @@
 $( ()=>{
 
-	$('#newPlayer').on('click', function() {
+	$('#newPlayer').click(function() {
 		$('#playerDiv').clone().removeClass('hidden').appendTo('#playersDiv');
 		$('.playerLife').last().val($('#defaultLife').val() );
 	}).click().click();
 
-	$('#deleteAll').on('click', function() {
+	$('#deleteAll').click(function() {
 		$('#playersDiv').html('');
 	});
 
-	$('#resetAll').on('click', function() {
+	$('#resetAll').click(function() {
 		$('.playerLife').val($('#defaultLife').val() );
 	});
 
-
 	$('#addCategory').click(function() {
-		// $('#categoryName').val().appendTo('.playerDiv');
 		$('.innerDiv').append('<br>' + $('#categoryName').val() + ':' );
 		$('#categoryDiv').clone().removeClass('hidden').appendTo('.innerDiv');
 
