@@ -32,10 +32,12 @@ body {
   text-align: center; }
 
 ::-moz-selection {
-  background: #ccc; }
+  background: #14b866;
+  color: #fff; }
 
 ::selection {
-  background: #ccc; }
+  background: #14b866;
+  color: #fff; }
 
 hr {
   border: 1px solid #666; }
@@ -45,8 +47,9 @@ hr {
 
 .innerDiv {
   border: 2px solid #666;
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 5px;
+  margin-bottom: 20px;
   display: inline-block;
   position: relative;
   box-shadow: 5px 5px 0px #333; }
@@ -97,5 +100,10 @@ h3 {
 .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none !important;
   box-shadow: none !important; }
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #14b866 !important; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,7 @@ $dark-grey: #666;
 // $grey: #999;
 $light-grey: #ccc;
 $light-light-grey: #eee;
+$white: #fff;
 
 $colorNames: red green blue;
 $brightColors: hsl(0, 80%, 40%) hsl(150, 80%, 40%) hsl(255, 80%, 40%);
@@ -32,10 +33,12 @@ body {
 	text-align: center;
 }
 ::-moz-selection {
-	background: $light-grey;
+	background: nth($brightColors, 2);
+	color: $white;
 }
 ::selection {
-	background: $light-grey;
+	background: nth($brightColors, 2);
+	color: $white;
 }
 
 hr {
@@ -48,8 +51,9 @@ hr {
 
 .innerDiv {
 	border: 2px solid $dark-grey;
-	padding: 15px;
-	margin: 10px;
+	padding: 20px;
+	margin: 5px;
+	margin-bottom: 20px;
 	display: inline-block;
 	position: relative;
 	box-shadow: 5px 5px 0px $black;
@@ -106,4 +110,10 @@ h3 {
 .btn.focus,.btn:active.focus,.btn.active.focus {
 	outline: none !important;
 	box-shadow: none !important;
+}
+
+input:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: nth($brightColors, 2) !important;
 }

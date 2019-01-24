@@ -40,7 +40,7 @@
 			<div class="input-group-append">
 				<button onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )-1); checkDead(playerLife);" tabindex="-1" class="btn btn-green"><i class="fas fa-minus"></i></button>
 			</div>
-			<input class="playerLife form-control form-control-lg text-center" onclick="this.select();" onchange="checkDead($(this) );" type="number" value="20">
+			<input class="playerLife form-control form-control-lg text-center" onclick="this.select();" onchange="checkDead($(this) );" type="number" value="20" max="999999999">
 			<div class="input-group-append">
 				<button onclick="let playerLife = $(this).parent().parent().children('.playerLife'); playerLife.val(parseInt(playerLife.val() )+1); checkDead(playerLife);" tabindex="-1" class="btn btn-green"><i class="fas fa-plus"></i></button>
 			</div>
@@ -66,6 +66,7 @@
 			<input id="defaultLife" tabindex="-1" class="form-control form-control-lg" type="number" value="20">
 		</div>
 	</div>
+
 
 </div>
 

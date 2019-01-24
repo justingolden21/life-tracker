@@ -1,5 +1,4 @@
 use react
-capitalize titles in html
 update icon
 add night mode
 upload and download lifetotals via txt or remember with cookies?
@@ -7,7 +6,8 @@ add list of players with comma seperated text?
 add poison/commander damage etc?
 change focus color
 
-option to add another attribute (commander damage, poison, etc)
+option to add another attribute (commander damage, poison, experence counters, etc)
+modal for thing to add with name and default value
 
 track whose turn it is (highlight with light green)
 button to go to next turn, button to make this player's turn
