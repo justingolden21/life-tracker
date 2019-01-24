@@ -46,7 +46,7 @@ hr {
 	display: none !important;
 }
 
-.playerDiv {
+.innerDiv {
 	border: 2px solid $dark-grey;
 	padding: 15px;
 	margin: 10px;
@@ -54,6 +54,7 @@ hr {
 	position: relative;
 	box-shadow: 5px 5px 0px $black;
 }
+
 .deletePlayer {
 	position: absolute;
 	top: 0px;

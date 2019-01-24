@@ -16,3 +16,5 @@ toggle to turn off this player being in line for turns (ie they died)
 keep track of changes to life totals?
 
 onload focus 1st input
+
+fullscreen button?
