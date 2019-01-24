@@ -18,3 +18,4 @@ keep track of changes to life totals?
 onload focus 1st input
 
 fullscreen button?
+display number of players
