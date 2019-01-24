@@ -13,6 +13,18 @@ $( ()=>{
 		$('.playerLife').val($('#defaultLife').val() );
 	});
 
+
+	$('#addCategory').click(function() {
+		// $('#categoryName').val().appendTo('.playerDiv');
+		$('.innerDiv').append('<br>' + $('#categoryName').val() + ':' );
+		$('#categoryDiv').clone().removeClass('hidden').appendTo('.innerDiv');
+
+	});
+
+	$('#categoryName').click(function() {
+		$(this).select();
+	});
+
 });
 
 function checkDead(elm) {

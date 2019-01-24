@@ -49,6 +49,18 @@
 </div>
 <!-- end hidden element -->
 
+<!-- another hidden element, for new inputs -->
+<div id="categoryDiv" class="input-group hidden">
+	<div class="input-group-append">
+		<button onclick="let playerOther = $(this).parent().parent().children('.playerOther'); playerOther.val(parseInt(playerOther.val() )-1);" tabindex="-1" class="btn btn-green"><i class="fas fa-minus"></i></button>
+	</div>
+	<input class="playerOther form-control text-center" onclick="this.select();" type="number" value="0" max="999999999">
+	<div class="input-group-append">
+		<button onclick="let playerOther = $(this).parent().parent().children('.playerOther'); playerOther.val(parseInt(playerOther.val() )+1);" tabindex="-1" class="btn btn-green"><i class="fas fa-plus"></i></button>
+	</div>
+</div>
+<!-- end hidden element -->
+
 <div class="container text-center">
 	<h3>
 		<img src="icon/icon-lite.svg" width="64px">
@@ -67,7 +79,21 @@
 		</div>
 	</div>
 
+	<hr>
 
+	<div class="row">
+		<div class="col-sm-4">
+			 Category Name: &nbsp;
+		</div>
+		<div class="col-sm-8">
+			<div class="input-group">
+				<input id="categoryName" tabindex="-1" class="form-control" type="text" value="Mana">
+				<!-- todo: break here only on smaller screens so text input larger -->
+				<button id="addCategory" tabindex="-1" class="btn btn-green"><i class="fas fa-plus-circle"></i> Add Category</button>
+			</div>
+		</div>
+	</div>
+	
 </div>
 
 <hr>
