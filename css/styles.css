@@ -23,11 +23,11 @@
   background-color: #2e0f8a; }
 
 html, body, input {
-  background-color: #eee !important; }
+  background-color: #333 !important; }
 
 body {
   margin: 20px;
-  color: #666;
+  color: #ccc;
   font-weight: bold;
   text-align: center; }
 
@@ -40,19 +40,19 @@ body {
   color: #fff; }
 
 hr {
-  border: 1px solid #666; }
+  border: 1px solid #ccc; }
 
 .hidden {
   display: none !important; }
 
 .innerDiv {
-  border: 2px solid #666;
+  border: 2px solid #ccc;
   padding: 20px;
   margin: 5px;
   margin-bottom: 20px;
   display: inline-block;
   position: relative;
-  box-shadow: 5px 5px 0px #333; }
+  box-shadow: 5px 5px 0px #666; }
 
 .deletePlayer {
   position: absolute;
@@ -61,11 +61,14 @@ hr {
   border: none !important; }
 
 input[type=text], input[type=number] {
-  border: 2px solid #666;
+  border: 2px solid #ccc;
   border-radius: 0px !important;
   text-align: center;
-  color: #666;
+  color: #ccc;
   font-weight: bold; }
+
+input[type=text]:focus, input[type=number]:focus {
+  color: #fff; }
 
 .playerName {
   margin-right: 40px;
@@ -76,7 +79,7 @@ input[type=text], input[type=number] {
   border-left: 0 !important; }
 
 .playerLife.dead {
-  background-color: #666 !important;
+  background-color: #ccc !important;
   color: #eee !important; }
 
 #defaultLife {

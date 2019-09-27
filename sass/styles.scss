@@ -23,12 +23,12 @@ $darkColors: hsl(0, 80%, 30%) hsl(150, 80%, 30%) hsl(255, 80%, 30%);
 
 
 html, body, input {
-	background-color: $light-light-grey !important;
+	background-color: $black !important;
 }
 
 body {
 	margin: 20px;
-	color: $dark-grey;
+	color: $light-grey;
 	font-weight: bold;
 	text-align: center;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 hr {
-	border: 1px solid $dark-grey;
+	border: 1px solid $light-grey;
 }
 
 .hidden {
@@ -50,13 +50,13 @@ hr {
 }
 
 .innerDiv {
-	border: 2px solid $dark-grey;
+	border: 2px solid $light-grey;
 	padding: 20px;
 	margin: 5px;
 	margin-bottom: 20px;
 	display: inline-block;
 	position: relative;
-	box-shadow: 5px 5px 0px $black;
+	box-shadow: 5px 5px 0px $dark-grey;
 }
 
 .deletePlayer {
@@ -67,11 +67,14 @@ hr {
 }
 
 input[type=text], input[type=number] {
-	border: 2px solid $dark-grey;
+	border: 2px solid $light-grey;
 	border-radius: 0px !important;
 	text-align: center;
-	color: $dark-grey;
+	color: $light-grey;
 	font-weight: bold;
+}
+input[type=text]:focus, input[type=number]:focus {
+	color: $white;
 }
 
 .playerName {
@@ -83,7 +86,7 @@ input[type=text], input[type=number] {
 	border-left: 0 !important;
 }
 .playerLife.dead {
-	background-color: $dark-grey !important;
+	background-color: $light-grey !important;
 	color: $light-light-grey !important;
 }
 #defaultLife {
