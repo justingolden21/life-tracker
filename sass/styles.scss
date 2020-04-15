@@ -1,4 +1,5 @@
 
+$background: #030; 
 $black: #333;
 $dark-grey: #666;
 // $grey: #999;
@@ -7,8 +8,8 @@ $light-light-grey: #eee;
 $white: #fff;
 
 $colorNames: red green blue;
-$brightColors: hsl(0, 80%, 40%) hsl(150, 80%, 40%) hsl(255, 80%, 40%);
-$darkColors: hsl(0, 80%, 30%) hsl(150, 80%, 30%) hsl(255, 80%, 30%);
+$brightColors: hsl(0, 80%, 30%) hsl(150, 80%, 30%) hsl(255, 80%, 30%);
+$darkColors: hsl(0, 80%, 20%) hsl(150, 80%, 20%) hsl(255, 80%, 20%);
 
 @for $i from 1 through length($colorNames) {
 	.btn.btn-#{nth($colorNames, $i)} {
@@ -23,7 +24,7 @@ $darkColors: hsl(0, 80%, 30%) hsl(150, 80%, 30%) hsl(255, 80%, 30%);
 
 
 html, body, input {
-	background-color: $black !important;
+	background-color: $background !important;
 }
 
 body {
@@ -100,8 +101,9 @@ input[type=text]:focus, input[type=number]:focus {
 .btn, #defaultLife {
 	border-radius: 0px;
 }
-.btn:active .fas {
-	transform: scale(1.5);
+.btn:hover .fas {
+	transition: 0.2s ease-in-out;
+	transform: scale(1.25);
 }
 
 h3 {

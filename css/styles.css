@@ -1,49 +1,61 @@
 .btn.btn-red {
-  background-color: #b81414;
-  border: 2px solid #8a0f0f;
-  color: #eee; }
+  background-color: #8a0f0f;
+  border: 2px solid #5c0a0a;
+  color: #eee;
+}
 
 .btn.btn-red:hover {
-  background-color: #8a0f0f; }
+  background-color: #5c0a0a;
+}
 
 .btn.btn-green {
-  background-color: #14b866;
-  border: 2px solid #0f8a4d;
-  color: #eee; }
+  background-color: #0f8a4d;
+  border: 2px solid #0a5c33;
+  color: #eee;
+}
 
 .btn.btn-green:hover {
-  background-color: #0f8a4d; }
+  background-color: #0a5c33;
+}
 
 .btn.btn-blue {
-  background-color: #3d14b8;
-  border: 2px solid #2e0f8a;
-  color: #eee; }
+  background-color: #2e0f8a;
+  border: 2px solid #1f0a5c;
+  color: #eee;
+}
 
 .btn.btn-blue:hover {
-  background-color: #2e0f8a; }
+  background-color: #1f0a5c;
+}
 
 html, body, input {
-  background-color: #333 !important; }
+  background-color: #030 !important;
+}
 
 body {
   margin: 20px;
   color: #ccc;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+}
 
 ::-moz-selection {
-  background: #14b866;
-  color: #fff; }
+  background: #0f8a4d;
+  color: #fff;
+}
 
 ::selection {
-  background: #14b866;
-  color: #fff; }
+  background: #0f8a4d;
+  color: #fff;
+}
 
 hr {
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+}
 
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 .innerDiv {
   border: 2px solid #ccc;
@@ -52,61 +64,76 @@ hr {
   margin-bottom: 20px;
   display: inline-block;
   position: relative;
-  box-shadow: 5px 5px 0px #666; }
+  box-shadow: 5px 5px 0px #666;
+}
 
 .deletePlayer {
   position: absolute;
   top: 0px;
   right: 0px;
-  border: none !important; }
+  border: none !important;
+}
 
 input[type=text], input[type=number] {
   border: 2px solid #ccc;
   border-radius: 0px !important;
   text-align: center;
   color: #ccc;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 input[type=text]:focus, input[type=number]:focus {
-  color: #fff; }
+  color: #fff;
+}
 
 .playerName {
   margin-right: 40px;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
 .playerLife {
   border-right: 0 !important;
-  border-left: 0 !important; }
+  border-left: 0 !important;
+}
 
 .playerLife.dead {
   background-color: #ccc !important;
-  color: #eee !important; }
+  color: #eee !important;
+}
 
 #defaultLife {
   width: 100px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 #newPlayer, #deleteAll, #resetAll {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .btn, #defaultLife {
-  border-radius: 0px; }
+  border-radius: 0px;
+}
 
-.btn:active .fas {
-  transform: scale(1.5); }
+.btn:hover .fas {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.25);
+}
 
 h3 {
-  color: #14b866; }
+  color: #0f8a4d;
+}
 
 /* JESUS CHRIST BOOTSTRAP */
 .btn:focus, .btn:active:focus, .btn.active:focus,
 .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
 input:focus {
   outline: none !important;
   box-shadow: none !important;
-  border-color: #14b866 !important; }
+  border-color: #0f8a4d !important;
+}
 
 /*# sourceMappingURL=styles.css.map */
