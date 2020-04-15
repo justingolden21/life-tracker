@@ -1,7 +1,7 @@
 .btn.btn-red {
   background-color: #8a0f0f;
   border: 2px solid #5c0a0a;
-  color: #eee;
+  color: #ccc;
 }
 
 .btn.btn-red:hover {
@@ -11,7 +11,7 @@
 .btn.btn-green {
   background-color: #0f8a4d;
   border: 2px solid #0a5c33;
-  color: #eee;
+  color: #ccc;
 }
 
 .btn.btn-green:hover {
@@ -21,7 +21,7 @@
 .btn.btn-blue {
   background-color: #2e0f8a;
   border: 2px solid #1f0a5c;
-  color: #eee;
+  color: #ccc;
 }
 
 .btn.btn-blue:hover {
@@ -98,7 +98,7 @@ input[type=text]:focus, input[type=number]:focus {
 
 .playerLife.dead {
   background-color: #ccc !important;
-  color: #eee !important;
+  color: #ccc !important;
 }
 
 #defaultLife {
@@ -120,7 +120,7 @@ input[type=text]:focus, input[type=number]:focus {
 }
 
 h3 {
-  color: #0f8a4d;
+  color: #ccc;
 }
 
 /* JESUS CHRIST BOOTSTRAP */

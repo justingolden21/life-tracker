@@ -4,7 +4,6 @@ $black: #000;
 $dark-grey: #666;
 // $grey: #999;
 $light-grey: #ccc;
-$light-light-grey: #eee;
 $white: #fff;
 
 $colorNames: red green blue;
@@ -15,7 +14,7 @@ $darkColors: hsl(0, 80%, 20%) hsl(150, 80%, 20%) hsl(255, 80%, 20%);
 	.btn.btn-#{nth($colorNames, $i)} {
 		background-color: nth($brightColors, $i);
 		border: 2px solid nth($darkColors, $i);
-		color: $light-light-grey;;
+		color: $light-grey;;
 	}
 	.btn.btn-#{nth($colorNames, $i)}:hover {
 		background-color: nth($darkColors, $i);
@@ -88,7 +87,7 @@ input[type=text]:focus, input[type=number]:focus {
 }
 .playerLife.dead {
 	background-color: $light-grey !important;
-	color: $light-light-grey !important;
+	color: $light-grey !important;
 }
 #defaultLife {
 	width: 100px;
@@ -107,7 +106,7 @@ input[type=text]:focus, input[type=number]:focus {
 }
 
 h3 {
-	color: nth($brightColors, 2);
+	color: $light-grey;
 }
 
 /* JESUS CHRIST BOOTSTRAP */
