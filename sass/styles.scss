@@ -1,6 +1,6 @@
 
 $background: #030; 
-$black: #333;
+$black: #000;
 $dark-grey: #666;
 // $grey: #999;
 $light-grey: #ccc;
@@ -53,11 +53,11 @@ hr {
 .innerDiv {
 	border: 2px solid $light-grey;
 	padding: 20px;
-	margin: 5px;
+	margin: 2px;
 	margin-bottom: 20px;
 	display: inline-block;
 	position: relative;
-	box-shadow: 5px 5px 0px $dark-grey;
+	box-shadow: 8px 8px 0px $black;
 }
 
 .deletePlayer {
